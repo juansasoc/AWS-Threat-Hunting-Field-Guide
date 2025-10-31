@@ -1,0 +1,4 @@
+title: AWS IAM Access Key Created
+logsource: { product: aws, service: cloudtrail }
+detection: { selection: { eventName: CreateAccessKey }, condition: selection }
+level: medium

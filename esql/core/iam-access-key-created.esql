@@ -1,0 +1,3 @@
+FROM cloudtrail
+| WHERE eventName == "CreateAccessKey"
+| STATS count() BY userIdentity.userName, sourceIPAddress
